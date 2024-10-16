@@ -1,0 +1,82 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Root Schema",
+    "required": [
+        "username",
+        "first_name",
+        "last_name",
+        "email",
+        "phone",
+        "password",
+        "admin"
+    ],
+    "properties": {
+        "username": {
+            "type": "string",
+            "default": "",
+            "title": "The username Schema",
+            "examples": [
+                "j_jackson12"
+            ]
+        },
+        "first_name": {
+            "type": "string",
+            "default": "",
+            "title": "The first_name Schema",
+            "examples": [
+                "Jack"
+            ]
+        },
+        "last_name": {
+            "type": "string",
+            "default": "",
+            "title": "The last_name Schema",
+            "examples": [
+                "Jackson"
+            ]
+        },
+        "email": {
+            "type": "string",
+            "title": "The email Schema",
+            "examples": [
+                "user@hotmail.com"
+            ],
+            "format": "email"
+        },
+        "phone": {
+            "type": "string",
+            "default": "",
+            "title": "The phone Schema",
+            "examples": [
+                "276475903"
+            ]
+        },
+        "password": {
+            "type": "string",
+            "default": "",
+            "title": "The password Schema",
+            "examples": [
+                "nukefuf09"
+            ]
+        },
+        "admin": {
+            "type": "boolean",
+            "default": false,
+            "title": "The admin Schema",
+            "examples": [
+                true
+            ]
+        }
+    },
+    "examples": [{
+        "username": "j_jackson12",
+        "first_name": "Jack",
+        "last_name": "Jackson",
+        "email": "ajndb@bsdi.com",
+        "phone": "276475903",
+        "password": "nukefuf09",
+        "admin": true
+    }]
+}
